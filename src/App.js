@@ -19,6 +19,7 @@ const kepek=[
   }
 ]
 
+//függvény komponens
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,7 @@ function App() {
         <article className='kepek'>
         {
           kepek.map((kep, index)=>{
-            return(<Kep kepAdat = {kep} key={index} />)
+            return(<Kep kepAdat = {kep} key={index} />) /* attributomok */
           })
         }
         </article>
